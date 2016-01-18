@@ -54,6 +54,11 @@ form {
   	text-align: center;
 }
 
+.form {
+	margin: auto;
+	margin-top: 15px;
+}
+
 #header {
 	padding-top: 25px;
 	padding-bottom: 45px;
