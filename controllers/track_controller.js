@@ -1,17 +1,10 @@
-var express = require('express');
 var fs = require('fs');
-var http = require('http');
-var mongoose = require('mongoose');
-var needle = require('needle');
-var Music = mongoose.model('Music');
 var track_model = require('./../models/track');
 
 // Devuelve una lista de las canciones disponibles y sus metadatos
 exports.list = function (req, res) {
-	Music.find(function(err, tracks) {
 	var tracks = track_model.tracks;
 	res.render('tracks/index', {tracks: tracks});
-	});
 };
 
 // Devuelve la vista del formulario para subir una nueva canción
@@ -25,9 +18,6 @@ exports.show = function (req, res) {
 	var track = track_model.tracks[req.params.trackId];
 	track.id = req.params.trackId;
 	res.render('tracks/show', {track: track});
-	Music.findOne({name: req.params.trackId}, function(err, track) {
-            res.render('tracks/show', {track: track});
-        });
 };
 
 // Escribe una nueva canción en el registro de canciones.
