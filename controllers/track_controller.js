@@ -3,7 +3,7 @@ var fs = require('fs');
 var http = require('http');
 var mongoose = require('mongoose');
 var needle = require('needle');
-var Music = mongoose.model('Music');
+var Music = mongoose.model('Track');
 var track_model = require('./../models/track');
 
 // Devuelve una lista de las canciones disponibles y sus metadatos
