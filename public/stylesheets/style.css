@@ -195,7 +195,19 @@ input[readonly] {
   border-color: #F50;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:active {
+  color: #fff;
+  background-color: #f50;
+  border-color: #D54700;
+}
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: #f50;
+  border-color: #D54700;
+}
+
+.btn-primary:hover {
   color: #fff;
   background-color: #f50;
   border-color: #D54700;
