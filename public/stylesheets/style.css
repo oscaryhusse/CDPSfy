@@ -1,44 +1,95 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 5px;
+	padding-top: 0;
+	margin-top: 0;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background: #F2F2F2;
 }
 
 a {
-  color: #00B7FF;
+	color: #FF3A00;
 }
 
-h1 a {
+a:focus, a:hover {
+	color: #fff;
 	text-decoration: none;
+	background-color:rgba(255, 255, 255, 0.25);
+}
+
+p {
+	padding-top: 10px;
+}
+
+.col-sm-3:focus, .col-sm-3:hover {
 	color: black;
 }
 
+img {
+	-webkit-box-sizing: initial;	
+}
+
+#titulo {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding-top: 10px;
+}
+
+#titulo:focus, a:hover {
+	background-color:rgba(255, 255, 255, 0);
+}
+
+h2 {
+	padding-top: 230px;
+	font-size: 32px;
+	font-weight: 100;
+	margin: 0 0 16px 0;
+	color: #fff;
+	text-align: center;
+}
+
+form {
+	margin-top: 50px;
+  	text-align: center;
+}
+
+input {
+	margin-left: 450px;
+}
+
+button {
+	margin-left: 570px;
+}
+
 #header {
-	padding-bottom: 20px;
+	padding-top: 25px;
+	padding-bottom: 45px;
+	position: relative;
+	margin-right: 8px;
+	margin-left: 8px;
+	overflow: hidden;
+	border-top: 4px solid #f50;
+	background-color: #666;
+	background-position: center center;
+	background-image: url(https://a-v2.sndcdn.com/assets/images/front/search-hero/zedsdead-fc6718.jpg);
 }
 
-#nav-bar {
-	float: left;
-	height: 600px;
-	width: 200px;
-	border-right: 3px groove black;
-}
-
-#nav-bar ul {
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-#nav-bar li {
-	padding-bottom: 20px;
+#container {
+	background: #fff;
+  	margin-top: -100px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-top: 100px;
+	padding-bottom: 600px;
 }
 
 #container-body {
-	padding-left: 250px;
-	width: 900px;
+	padding-top: 50px;
 }
 
 #welcome {
-	padding-left: 50px;
+	padding-top: 50px;
 	text-align: center;
 }
 
@@ -50,7 +101,6 @@ h1 a {
 	width: 300px;
 	height: 200px;
 	padding-top: 50px;
-	float: left;
 	text-decoration: none;
 	color: black;
 	text-align: center;
@@ -59,11 +109,12 @@ h1 a {
 .track_playing {
 	width: 500px;
 	height: 500px;
-	padding-left: 200px;
+	padding-left: 370px;
+	-webkit-box-sizing: initial;
 }
 
 .track_playing button {
-	margin-top: 50px;
+	margin-left: 0;
 }
 
 .track p {
@@ -74,7 +125,7 @@ h1 a {
 	width: 60px;
 	height: 60px;
 	border: 1px groove black;
-	padding: 20px;
+	padding: 50px;
 }
 
 .track_playing img {
@@ -90,4 +141,34 @@ h1 a {
 .upload_field {
 	display: block;
 	margin-top: 15px;
+}
+
+#botones {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+  	position: relative;
+  	margin-left: 10px;
+	margin-right: 10px;
+  	border: 1px solid #e5e5e5;
+  	border-radius: 3px;
+  	background-color:rgba(255, 255, 255, 0.1);
+  	cursor: pointer;
+  	color: #fff;
+  	text-decoration: none;
+	white-space: nowrap;
+  	font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  	font-weight: 100;
+  	text-align: center;
+  	vertical-align: baseline;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	box-sizing: border-box;
+	font-size: 16px;
+  	line-height: 18px;
+ 	 padding: 10px 15px;
+ 	 height: 40px;
 }

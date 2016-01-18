@@ -2,20 +2,24 @@
 <html>
   <head>
     <title>CDPSfy</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/9/d/9dk4928qhi.ico" type="image/x-icon" />
   </head>
   <body>
   	<div id="header">
-    	<h1><a href="/">CDPSfy</a></h1>
-  	</div>
-    <div id="container">
-	    <div id="nav-bar">
-	    	<ul>
-	    		<li><a href="/tracks">My tracks</a></li>
-	    		<li><a href="/tracks/new">Upload new track</a></li>
-	    	</ul>
-	    </div>
-	    <div id="container-body"><%- body %></div>
-    </div>
+	<a href="/"><img src="http://i.imgur.com/K9spnEB.png" style="height: 25px; margin-top: -10px; margin-left: 40px;"></a>
+    	<a href="/" id="titulo">CDPSfy</a>
+	<h2>Welcome to CDPSfy. In this website you can listen<br>the uplodaded tracks and upload your own tracks.</h2>
+	<div id="botones">
+		<a href="/tracks" class="button">My tracks</a>	
+		<a href="/tracks/new" class="button">Upload new track</a>
+	</div>
+	</div>
+    	<div id="container">
+	    <div class="col-sm-12" id="container-body"><%- body %></div>
+    	</div>
+	<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
   </body>
 </html>
