@@ -21,7 +21,7 @@ var musicSchema = new Schema({
   urlpic:   { type: String },
 });
 
-module.exports = mongoose.model('Track', musicSchema);
+module.exports = mongoose.model('Music', musicSchema);
     
 exports.tracks = {
 	1: {
