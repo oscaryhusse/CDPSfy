@@ -9,17 +9,7 @@ track_id: {
 
 */
 
-var mongoose = require('mongoose'),  
-    Schema   = mongoose.Schema;
 
-var musicSchema = new Schema({  
-  name:     { type: String },
-  url:      { type: String },
-  namepic:  { type: String },
-  urlpic:   { type: String },
-});
-
-module.exports = mongoose.model('Music', musicSchema);    
     
 exports.tracks = {
 	1: {
