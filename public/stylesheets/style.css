@@ -212,3 +212,8 @@ input[readonly] {
   background-color: #f50;
   border-color: #D54700;
 }
+
+.col-sm-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
