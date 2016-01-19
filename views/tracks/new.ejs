@@ -1,3 +1,4 @@
+/*
 <form class="col-sm-4 col-sm-offset-4" action="/tracks" method="post" enctype="multipart/form-data">  
   <label class="form upload_field">Upload a new track:</label>
   <input class="form upload_field" type="file" name="track"/>
@@ -5,12 +6,12 @@
   <button class="form hint upload_field" type="submit" style="width: 24%;">Upload</button>
   <span class="hint upload_field">Supported files: MP3, Wav, and Ogg</span>
 </form>
-
+*/
 <div class="container" style="margin-top: 20px;">
     <form action="/tracks" method="post" enctype="multipart/form-data">
         <div class="input-group col-sm-4 col-sm-offset-4" style="margin-bottom: 15px;">
             <span class="input-group-btn">
-                <span class="btn btn-primary btn-file">
+                <span class="btn btn-primary btn-file" style="margin-right: 3px;">
                     Browse track&hellip; <input type="file" name="track">
                 </span>
             </span>
