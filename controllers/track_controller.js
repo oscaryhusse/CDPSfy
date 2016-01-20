@@ -40,7 +40,7 @@ exports.create = function (req, res) {
 	var track = req.files.track;
 
 	if (track !== undefined) {
-		console.log('Nuevo tracks. Info: ', track);
+		console.log('New tracks. Info: ', track);
 		var id = track.name.split('.')[0];
 		var name = track.originalname.split('.')[0];
 		var data = track.buffer;
