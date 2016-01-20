@@ -13,11 +13,10 @@ var app = express();
 
 // database connect
 mongoose.connect('mongodb://localhost/tracks', function(err, res) {
-  if (err) {
+  if (err)
     console.log('Connecting to database... ERROR: ' + err);
-  } else {
+  else
     console.log('Connected to database successfully');
-  }
 });
 
 require('./models/track');
