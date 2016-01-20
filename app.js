@@ -12,7 +12,7 @@ var routes = require('./routes/index');
 var app = express();
 
 // database connect
-mongoose.connect('mongodb://localhost/tracks', function(err, res) {
+mongoose.connect('mongodb://localhost/music', function(err, res) {
   if (err)
     console.log('Connecting to database... ERROR: ' + err);
   else
