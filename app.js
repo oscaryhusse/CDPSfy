@@ -11,6 +11,17 @@ var routes = require('./routes/index');
 
 var app = express();
 
+// database connect
+mongoose.connect('mongodb://localhost/tracks', function(err, res) {
+  if (err) {
+    console.log('Connecting to database... ERROR: ' + err);
+  } else {
+    console.log('Connected to database successfully');
+  }
+});
+
+require('./models/track');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -57,6 +68,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
