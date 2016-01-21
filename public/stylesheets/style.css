@@ -61,8 +61,8 @@ form {
 	padding-top: 25px;
 	padding-bottom: 45px;
 	position: relative;
-	margin-right: 8px;
-	margin-left: 8px;
+	margin-right: 50px;
+	margin-left: 52px;
 	overflow: hidden;
 	border-top: 4px solid #f50;
 	background-color: #666;
@@ -73,8 +73,8 @@ form {
 #container {
 	background: #fff;
   	margin-top: -100px;
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-right: 50px;
+	margin-left: 52px;
 	padding-top: 100px;
 	padding-bottom: 600px;
 }
@@ -117,10 +117,7 @@ form {
 }
 
 .track img {
-	width: 60px;
-	height: 60px;
 	border: 1px groove black;
-	padding: 50px;
 }
 
 .track_playing img {
